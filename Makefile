@@ -1,4 +1,4 @@
-export DOCKER_ORG ?= cloudposse
+export DOCKER_ORG ?= unionpos
 export DOCKER_IMAGE ?= $(DOCKER_ORG)/packages
 export DOCKER_TAG ?= latest
 export DOCKER_IMAGE_NAME ?= $(DOCKER_IMAGE):$(DOCKER_TAG)
@@ -13,7 +13,7 @@ export ALPINE_VERSION ?= 3.10
 
 SHELL := /bin/bash
 
--include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
+-include $(shell curl -sSL -o .build-harness "https://raw.githubusercontent.com/unionpos/build-harness/master/templates/Makefile.build-harness"; echo .build-harness)
 
 all: init deps build install run
 
@@ -21,7 +21,7 @@ deps:
 	@exit 0
 
 ## Create a distribution by coping $PACKAGES from $INSTALL_PATH to $DIST_PATH
-dist: INSTALL_PATH=/usr/local/bin
+dist: INSTALL_PATH=/packages/bin
 dist:
 	mkdir -p $(DIST_PATH)
 	[ -z "$(PACKAGES)" ] || \
@@ -34,7 +34,7 @@ push:
 	docker push $(DOCKER_IMAGE)
 
 run:
-	docker run -it ${DOCKER_IMAGE_NAME} sh
+	docker run -it ${DOCKER_IMAGE_NAME} /bin/sh
 
 .github/auto-label.yml:: PACKAGES=$(sort $(dir $(wildcard vendor/*/)))
 .github/auto-label.yml::

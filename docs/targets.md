@@ -24,14 +24,18 @@ github-commenter          0.5.0      Command line utility for creating GitHub co
 github-release            0.7.2      Commandline app to create and edit releases on Github (and upload artifacts)
 github-status-updater     0.2.0      Command line utility for updating GitHub commit statuses and enabling required status checks for pull requests
 gitleaks                  1.2.0      Audit git repos for secrets 🔑
+migrate                   4.7.0      Database migrations. CLI and Golang library.
 gomplate                  3.6.0      A flexible commandline tool for template rendering. Supports lots of local and remote datasources.
 goofys                    0.23.1     a high-performance, POSIX-ish Amazon S3 file system written in Go
+goreleaser                0.123.1    Deliver Go binaries as fast and easily as possible
 gosu                      1.11       Simple Go-based setuid+setgid+setgroups+exec
 gotop                     3.0.0      A terminal based graphical activity monitor inspired by gtop and vtop
 helm                      3.0.0      The Kubernetes Package Manager
 helmfile                  0.93.2     Deploy Kubernetes Helm Charts
 htmltest                  0.10.3     :white_check_mark: Test generated HTML for problems
+hub                       2.13.0     A command-line tool that makes git easier to use with GitHub
 hugo                      0.59.1     The world’s fastest framework for building websites.
+jq                        1.6        yq is a portable command-line YAML processor
 json2hcl                  0.0.6      Convert JSON to HCL, and vice versa
 k6                        0.25.1     A modern load testing tool, using Go and JavaScript - https://k6.io
 kfctl                     0.7.0      Machine Learning Toolkit for Kubernetes
@@ -45,7 +49,10 @@ kubectl-1.13              1.13.11    Production-Grade Container Scheduling and M
 kubectl-1.14              1.14.7     Production-Grade Container Scheduling and Management
 kubectx                   0.7.1      Switch faster between clusters and namespaces in kubectl
 kubens                    0.7.1      Switch faster between clusters and namespaces in kubectl
+lazydocker                0.7.6      The lazier way to manage everything docker
+lazygit                   0.11.3     simple terminal UI for git commands
 lectl                     0.17       Script to check issued certificates by Let's Encrypt on CTL (Certificate Transparency Log) using https://crt.sh
+mfa                       1.1.1      Two-factor authentication on the command line
 misspell                  0.3.4      Correct commonly misspelled English words in source files
 packer                    1.4.4      Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
 pandoc                    2.8        Universal markup converter
@@ -55,7 +62,7 @@ retry                     3.3.0      ♻️ Functional mechanism based on channe
 scenery                   0.1.5      A Terraform plan output prettifier
 sentry-cli                1.49.0     A command line utility to work with Sentry.
 shellcheck                0.7.0      ShellCheck, a static analysis tool for shell scripts
-shfmt                     2.6.4      A shell parser, formatter and interpreter (POSIX/Bash/mksh)
+sh                        2.6.4      A shell parser, formatter and interpreter (POSIX/Bash/mksh)
 slack-notifier            0.2.0      Command line utility to send messages with attachments to Slack channels via Incoming Webhooks
 sops                      3.5.0      Secrets management stinks, use some sops!
 stern                     1.11.0     ⎈ Multi pod and container log tailing for Kubernetes
@@ -63,8 +70,10 @@ sudosh                    0.2.0      Shell wrapper to run a login shell with `su
 teleport                  3.2.14     Privileged access management for elastic infrastructure.
 terraform                 0.12.16    Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
 terraform-0.11            0.11.14    Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
-terraform-0.12            0.12.10    Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
+terraform-0.12            0.12.14    Terraform is a tool for building, changing, and combining infrastructure safely and efficiently.
 terraform-docs            0.6.0      Generate docs from terraform modules
+terraform-inventory       0.9        mailgun provider for terraform based on v3 of the api
+terraform-provider-mailgunv3 0.2.2      mailgun provider for terraform based on v3 of the api
 terragrunt                0.21.6     Terragrunt is a thin wrapper for Terraform that provides extra tools for working with multiple Terraform modules.
 terrahelp                 0.7.1      Terrahelp is as a command line utility that provides useful tricks like masking of terraform output.
 tfenv                     0.4.0      Transform environment variables for use with Terraform (e.g. `HOSTNAME` ⇨ `TF_VAR_hostname`)
