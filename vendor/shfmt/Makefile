@@ -1,5 +1,7 @@
 # Package details
 export VENDOR ?= mvdan
+export PACKAGE_NAME ?= sh
+
 export DOWNLOAD_URL ?= $(PACKAGE_REPO_URL)/releases/download/v$(PACKAGE_VERSION)/shfmt_v$(PACKAGE_VERSION)_$(OS)_$(ARCH)
 export APK_BUILD_TEMPLATE ?= APKBUILD.github-binary
 export PACKAGE_REPO_NAME ?= sh

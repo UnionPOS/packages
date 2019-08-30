@@ -5,5 +5,6 @@ build-harness
 *.tfstate.*
 .idea
 *.iml
+*.log
 *.rsa*
 artifacts/
