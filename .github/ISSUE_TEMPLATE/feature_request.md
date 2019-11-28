@@ -2,14 +2,10 @@
 name: Feature Request
 about: Suggest an idea for this project
 title: ''
-labels: 'feature request'
+labels: 'enhancement'
 assignees: ''
 
 ---
-
-Have a question? Please checkout our [Slack Community](https://slack.cloudposse.com) in the `#geodesic` channel or visit our [Slack Archive](https://archive.sweetops.com/geodesic/). 
-
-[![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com)
 
 ## Describe the Feature
 
